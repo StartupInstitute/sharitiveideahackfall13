@@ -1,0 +1,510 @@
+@font-face {
+                font-family: 'RockwellStd-BoldItalic';
+                src: url('fonts/rockwellstdbolditalic.eot');
+                src: url('fonts/rockwellstdbolditalic.eot?#iefix') format('embedded-opentype'),
+                                 url('fonts/rockwellstdbolditalic.woff') format('woff'),
+                                 url('fonts/rockwellstdbolditalic.ttf') format('truetype'),
+                                 url('fonts/rockwellstdbolditalic.svg#RockwellStd-BoldItalic') format('svg');
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face {
+                font-family: 'RockwellStd-Italic';
+                src: url('fonts/rockwellstditalic.eot');
+                src: url('fonts/rockwellstditalic.eot?#iefix') format('embedded-opentype'),
+                                 url('fonts/rockwellstditalic.woff') format('woff'),
+                                 url('fonts/rockwellstditalic.ttf') format('truetype'),
+                                 url('fonts/rockwellstditalic.svg#RockwellStd-Italic') format('svg');
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face {
+                font-family: 'RockwellStd-Bold';
+                src: url('fonts/rockwellstdbold.eot');
+                src: url('fonts/rockwellstdbold.eot?#iefix') format('embedded-opentype'),
+                                 url('fonts/rockwellstdbold.woff') format('woff'),
+                                 url('fonts/rockwellstdbold.ttf') format('truetype'),
+                                 url('fonts/rockwellstdbold.svg#RockwellStd-Bold') format('svg');
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face {
+                font-family: 'RockwellStd';
+                src: url('fonts/rockwellstd.eot');
+                src: url('fonts/rockwellstd.eot?#iefix') format('embedded-opentype'),
+                                 url('fonts/rockwellstd.woff') format('woff'),
+                                 url('fonts/rockwellstd.ttf') format('truetype'),
+                                 url('fonts/rockwellstd.svg#RockwellStd') format('svg');
+                font-weight: normal;
+                font-style: normal;
+}
+.Rockwell {
+    font-family: RockwellStd;
+}
+.Rockwell strong, .Rockwell b {
+    font-weight: normal;
+    font-style: normal;
+    font-family: RockwellStd-Bold;
+}
+.Rockwell em, .Rockwell i {
+    font-weight: normal;
+    font-style: normal;
+    font-family: RockwellStd-Italic;
+}
+
+.Rockwell em strong, .Rockwell i strong, .Rockwell em b, .Rockwell i b {
+    font-weight: normal;
+    font-style: normal;
+    font-family: RockwellStd-BoldItalic;
+}
+
+
+@font-face {
+    font-family: 'ProximaNova-Regular';
+    src: url('fonts/proximanovaregular.eot');
+    src: url('fonts/proximanovaregular.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/proximanovaregular.woff') format('woff'),
+                     url('fonts/proximanovaregular.ttf') format('truetype'),
+                     url('fonts/proximanovaregular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-Bold';
+    src: url('fonts/proximanovabold.eot');
+    src: url('fonts/proximanovabold.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/proximanovabold.woff') format('woff'),
+                     url('fonts/proximanovabold.ttf') format('truetype'),
+                     url('fonts/proximanovabold.svg#ProximaNova-Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-BoldIt';
+    src: url('fonts/proximanovaboldit.eot');
+    src: url('fonts/proximanovaboldit.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/proximanovaboldit.woff') format('woff'),
+                     url('fonts/proximanovaboldit.ttf') format('truetype'),
+                     url('fonts/proximanovaboldit.svg#ProximaNova-BoldIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNova-RegularIt';
+    src: url('fonts/proximanovaregularit.eot');
+    src: url('fonts/proximanovaregularit.eot?#iefix') format('embedded-opentype'),
+                     url('fonts/proximanovaregularit.woff') format('woff'),
+                     url('fonts/proximanovaregularit.ttf') format('truetype'),
+                     url('fonts/proximanovaregularit.svg#ProximaNova-RegularIt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+                
+.ProximaNova {
+    font-family: ProximaNova-Regular;
+}
+.ProximaNova strong, .ProximaNova b {
+    font-weight: normal;
+    font-style: normal;
+    font-family: ProximaNova-Bold;
+}
+.ProximaNova em, .ProximaNova i {
+    font-weight: normal;
+    font-style: normal;
+    font-family: ProximaNova-RegularIt;
+}
+
+.ProximaNova em strong, .ProximaNova i strong, .ProximaNova em b, .ProximaNova i b {
+    font-weight: normal;
+    font-style: normal;
+    font-family: ProximaNova-BoldIt;
+}
+
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 50px;
+    background-color: #000;
+    background-image: url(../img/header_nav_bg.png);
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
+header nav {
+    min-width: 960px;
+    margin: 0 auto;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+header nav a {
+    color: #fff;
+    padding: 0px 18px;
+    text-decoration: none;
+}
+
+header nav a.active {
+    color: #5142B7;
+}
+
+header nav a:hover {
+    color: #5142B7;
+}
+header img#beta {
+    position: absolute;
+    left: 34px;
+    top: 17px;
+}
+
+section {
+    width: 100%;
+    border-width: 1px 0;
+    border-color: #fff;
+    border-style: solid;
+}
+
+
+section div.block {
+    position: relative;
+    width: 790px;
+    margin: 0px auto;
+}
+
+#primary_page {
+    margin-bottom: 600px;
+}
+
+#logo {
+    position: relative;
+    background-color: #3d2bb8;
+    padding-top: 50px;
+    height: 400px;
+}
+
+#logo img {
+    position: absolute;
+    left: -46px
+}
+
+
+
+#intro {
+    padding-top: 64px;
+}
+#intro #intro_image {
+    width: 406px;
+    height: 254px;
+    float: left;
+}
+#intro #intro_copy {
+    color: #272727;
+    line-height: 22px;
+    font-size: 16px;
+    float: right;
+    width: 336px;   
+}
+#intro #intro_copy p  {
+    margin: 30px 0;
+}
+
+.cta_button {
+    clear: both;
+    border: 1px solid white;
+    padding: 71px 0 80px;
+}
+.cta_button a {
+    margin: 0px auto 0px;
+    width: 179px;
+    height: 47px;
+    background-image: url(../img/button_bak.png);
+    display: block;
+    line-height: 47px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    clear: both;
+    text-decoration: none;
+}
+
+
+#partners {
+    
+}
+#partners h1 {
+    color: #3d2bb8;
+    font-family: Rockwell;
+    font-weight: norrmal;
+    font-size: 26px;
+    margin: 30px 0 23px 0px;
+    padding: 0px;
+}
+.scroller {
+    width: 100%;
+    -moz-box-shadow: 0px 0px 15px #888;
+    -webkit-box-shadow: 0px 0px 15px #888;
+    box-shadow: 0px 0px 15px #888;
+    height: 163px;
+    position: relative;
+    margin: 0px 0 128px 0;
+    padding: 0px;
+}
+.scroller a.prev {
+    position: absolute;
+    left: 18px;
+    top: 60px;
+    display: block;
+    height: 48px;
+    width: 14px;
+    text-indent: -900px;
+    overflow: hidden;
+    background: url('../img/left.png') 0 0 no-repeat;
+}
+.scroller a.next {
+    position: absolute;
+    right: 18px;
+    top: 60px;
+    display: block;
+    height: 48px;
+    width: 14px;
+    text-indent: -900px;
+    overflow: hidden;
+    background: url('../img/right.png') 0 0 no-repeat;
+}
+.scroller a.disabled {
+    background-position: 0 -48px;
+}
+.scroller ul {
+    height: 110px;
+    width: 720px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: 28px;
+    left: 35px;
+}
+.scroller ul li {
+    list-style: none;
+    display: block;
+    float: left;
+    margin: 0px 35px 0px 35px;   
+}
+.scroller ul img {
+    
+}
+.scroller ul li .hover{
+    display: none;
+}
+
+.scroller .mask {
+    position:relative;
+    overflow:hidden; 
+    width:720px; 
+    left: 35px;
+    top: 28px;
+}
+.scroller .mask ul {
+    left: 0px;
+    top: 0px;
+}
+
+.hover_box {
+    position: absolute;
+    z-index: 1000;
+    display: none;
+    -moz-box-shadow: 0px 0px 5px #888;
+    -webkit-box-shadow: 0px 0px 5px #888;
+    box-shadow: 0px 0px 5px #888;
+    background-color: #efefef;
+    width: 400px;
+    padding: 0px 25px;
+    opacity:0.7;
+    filter:alpha(opacity=70); /* For IE8 and earlier */
+}
+#about {
+    font-size: 16px;
+    background-color: #3d2bb8;
+    color: #ffffff;
+    padding-top: 30px;
+}
+#about p {
+    margin: 18px 20px 18px 57px;  
+}
+
+#about #about_steps {
+   margin: 0px 20px 0px 57px;   
+}
+#about .about_step {
+    float: left;
+    text-align: center;
+    width: 31%;
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 45px;   
+}
+#about #about_1 {
+    margin-top:20px;
+}
+#about #about_1 p {
+    margin-top:20px;
+}
+#about #about_2 {
+    margin-top:34px;
+}
+#about #about_2 p {
+    margin-top:26px;
+}
+#about #about_3 {
+    margin-top:33px;
+}
+#about #about_3 p {
+    margin-top:21px;
+}
+#about .about_step p {
+    margin: 0px 10px 0 10px
+    
+}
+#blog h1 {
+    color: #3d2bb8;
+    font-family: Rockwell;
+    font-weight: norrmal;
+    font-size: 26px;
+    margin: 30px 0 23px 0px;
+    padding: 0px;
+}
+#blog h2 {
+    font-weight: norrmal;
+    font-size: 18px;
+    margin: 15px 0 3px 0px;
+    padding: 0px;
+}
+#blog .entry_date {
+    line-height: auto;
+    font-size: 12px;
+    margin: 0px 0 3px 0px;
+    padding: 0px;
+    
+}
+
+
+#contact {
+    padding: 30px 0 80px 0;
+    color: #000000;
+}
+#contact h1 {
+    font-size: 24px;
+    margin: 0px;
+    padding: 0px;   
+}
+#contact p {
+    line-height: 22px;
+}
+#contact p a {
+    text-decoration: none;
+    color: #3d2bb8;
+}
+#contact #contact_social a {
+    margin: 0px 0px 0 23px;
+}
+#contact #contact_social img {
+    vertical-align:sub;
+}
+
+#faq_page {
+    margin-top: 50px;
+}
+#faq h1 {
+    color: #3d2bb8;
+    font-family: Rockwell;
+    font-weight: norrmal;
+    font-size: 26px;
+    margin: 30px 0 23px 0px;
+    padding: 0px;
+}
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 135px;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 12px;
+}
+
+footer nav {
+    min-width: 960px;
+    margin: 20px auto 0 auto;
+    line-height: 40px;
+    text-align: center;
+}
+
+footer nav a {
+    color: #fff;
+    padding: 0px 8px;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    color: #5142B7;
+}
+
+footer nav a.active {
+    color: #5142B7;
+}
+footer #footer_social {
+    padding-left: 10px;
+}
+footer #footer_social a {
+    vertical-align:inherit;
+    display: inline-block;
+    zoom: 1;
+    *display: block;
+    height: 13px;
+    width: 17px;
+    text-indent: -999px;
+    overflow: hidden;
+    background-image: url("../img/small_social_sprite.png"); 
+    background-position: 0px 0px;
+    margin-left: 6px;
+    padding: 0px;
+}
+footer #footer_social a:hover {
+}
+footer #footer_social a.facebook {
+    background-position: 0px 0px;
+    width: 14px;
+}
+footer #footer_social a.twitter {
+    background-position: -17px 0px;
+    width: 17px;
+}
+
+footer #footer_social a.instagram {
+    background-position: -34px 0px;
+}
+footer #footer_social a.facebook:hover {
+    background-position: 0px -13px;
+}
+footer #footer_social a.twitter:hover {
+    background-position: -17px -13px;
+}
+
+footer #footer_social a.instagram:hover {
+    background-position: -34px -13px;
+    width: 17px;
+}
+footer #copy_right {
+    min-width: 960px;
+    text-align: center;
+}
+
+#simplemodal-overlay {background-color:#000;}
+#simplemodal-container {background-color:#333; border:8px solid #444; padding:12px;}
+#simplemodal-container .simplemodal-wrap { overflow: hidden; }
